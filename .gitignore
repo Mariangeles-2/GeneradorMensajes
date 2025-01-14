@@ -15,3 +15,8 @@ build/
 
 # Ignorar archivos específicos
 secret-config.json
+
+# Ignorar archivos de configuración del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
