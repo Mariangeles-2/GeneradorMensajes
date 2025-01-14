@@ -1,0 +1,17 @@
+# Ignorar archivos de configuración del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar directorios de dependencias
+node_modules/
+vendor/
+
+# Ignorar archivos de compilación
+dist/
+build/
+
+# Ignorar archivos específicos
+secret-config.json
