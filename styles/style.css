@@ -38,6 +38,18 @@ main {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
 h2 {
   font-size: 1.5rem;
   color: #007bff;

@@ -15,7 +15,7 @@
 <body>
 
     <header>
-        <h1>Generador de Mensajes de Pedidos</h1>
+        <h1>Generador de Mensajes</h1>
     </header>
 
     <main>
@@ -25,12 +25,12 @@
                 <h2>Mensaje inicial</h2>
                 <div class="d-flex justify-content-center">
                     <img src="assets/ayuda.png" alt="Ícono de ayuda" width="15" height="15">
-                    <p class="parrafoDeAyuda me-3">Escribí acá el saludo inicial para los proveedores. Por Ejemplo:
+                    <p class="parrafoDeAyuda ms-3">Escribí acá el saludo inicial para los proveedores. Por Ejemplo:
                         "Hola!,...".
                     </p>
                 </div>
                 <div id="contenedorMensajeAlProveedor">
-                    <input type="text">
+                    <textarea id="mensajeAlProveedor" placeholder="Escribe tu mensaje aquí"></textarea>
                 </div>
             </div>
 
@@ -40,27 +40,29 @@
                     <img src="assets/ayuda.png" alt="Ícono de ayuda" width="15" height="15">
                     <p class="parrafoDeAyuda ms-3">Escribí acá el detalle de pedido o cargá un archivo (.xlsx).</p>
                 </div>
-                <div id="contenedorPedidoAlProveedor">
-                </div>
-            </div>
 
-            <div id="mensajeFinalYEnviar">
+                <div id="contenedorPedidoAlProveedor" class="d-flex justify-content-center align-items-center">
+                </div>
+
                 <h2>Este es el mensaje completo que se enviará al proveedor</h2>
                 <div class="d-flex justify-content-center">
                     <img src="assets/ayuda.png" alt="Ícono de ayuda" width="15" height="15">
-                    <p class="parrafoDeAyuda ms-3">Así quedará tu mensaje final, listo para enviarse. Revisalo antes de
-                        mandarlo por WhatsApp.</p>
+                    <p class="parrafoDeAyuda ms-3">Así quedará tu mensaje final, listo para enviarse. Revisalo antes
+                        de mandarlo por WhatsApp.</p>
                 </div>
-                <textarea id="mensajeFinal" rows="5" placeholder="Aquí aparecerá tu mensaje"></textarea>
-                <button id="enviarWhatsApp">Enviar por WhatsApp</button>
+                <div id="mensajeFinalYEnviar"  class="d-flex justify-content-center flex-column">
+                    <textarea id="mensajeFinal"></textarea>
+                    <button id="enviarWhatsApp">Enviar por WhatsApp</button>
+                </div>
             </div>
-        </div>
     </main>
 
     <footer>
         <p class="saludo">Que tengas un buen día!</p>
     </footer>
 
+    <!--Script XLSX-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
     <!--Script BootStrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
